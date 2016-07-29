@@ -1,5 +1,5 @@
 import { fastfloor } from './MathUtils';
-import Point from './Repel';
+import Point from './Point';
 
 /** Parent Render Class */
 export default class Render {
