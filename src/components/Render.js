@@ -79,10 +79,10 @@ export default class Render {
     this.surface.clearRect(0, 0, this.width, this.height);
     for (let x = 0; x < this.points.length; x++) {
       const point = this.points[x];
-      point.update();
       if (x < this.points.length - 1) {
         this.connectPoints(x);
       }
+      point.update();
     }
     window.requestAnimationFrame(this.renderLoop);
   }
