@@ -1,6 +1,6 @@
 import Mouse from './Mouse';
 /**
-  Default Particle / Point file to render distoration field.
+  This one was just for fun - not sure where I was going with this....
 */
 export default class Particle {
   constructor(obj) {
@@ -27,8 +27,8 @@ export default class Particle {
     const point = this.getVector();
     const damp = this.size * 0.025;
     const distance = this.distance();
-    this.vx = distance < this.radius ? this.x - (point.x * damp) : this.vx - (this.vx - this.x) * 0.1;
-    this.vy = distance < this.radius ? this.y - (point.y * damp) : this.vy - (this.vy - this.y) * 0.1;
+    this.vx = this.x - (point.x * damp) * ((this.radius - distance) / 75);
+    this.vy = this.y - (point.y * damp) * ((this.radius - distance) / 75);
   }
 
   distance() {
@@ -40,9 +40,9 @@ export default class Particle {
   }
 
   effect() {
-    const distance = this.distance();
-    this.size = distance < this.radius ? ~~(this.originalSize + (this.radius - distance) / 4) :
-      ~~(this.size - (this.size - this.originalSize) * 0.1);
+    // const distance = this.distance();
+    // this.size = distance < this.radius ? ~~(this.originalSize + (this.radius - distance) / 4) :
+    //   ~~(this.size - (this.size - this.originalSize) * 0.1);
   }
 
   draw() {

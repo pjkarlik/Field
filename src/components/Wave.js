@@ -1,5 +1,7 @@
 import Mouse from './Mouse';
-
+/**
+  Sine/CoSine waves applied to Field Grid.
+*/
 export default class Particle {
   constructor(obj) {
     this.x = obj.x;

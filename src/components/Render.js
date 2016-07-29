@@ -1,5 +1,6 @@
 import { fastfloor } from './MathUtils';
 import Point from './Point';
+// Switch import to other items to see examples - [Field.js, Wave.js, Parabola.js]
 
 /** Parent Render Class */
 export default class Render {
@@ -45,7 +46,7 @@ export default class Render {
             y,
           },
           size: 2,
-          radius: 250,
+          radius: 150,
           color: {
             r: 0,
             g: 255,

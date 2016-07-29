@@ -1,18 +1,17 @@
 import Mouse from './Mouse';
-
+/**
+  Trying to make an Attractor Field.
+*/
 export default class Particle {
   constructor(obj) {
-    this.x = obj.x;
-    this.y = obj.y;
+    this.x = this.vx = obj.x;
+    this.y = this.vy = obj.y;
     this.index = {
       x: obj.index.x,
       y: obj.index.y,
     };
-    this.vx = this.x;
-    this.vy = this.y;
-    this.size = obj.size;
-    this.originalSize = this.size;
-    this.radius = obj.radius - 100;
+    this.size = this.originalSize = obj.size;
+    this.radius = obj.radius;
     this.color = obj.color;
     this.mouse = new Mouse();
     this.canvas = obj.canvas;
