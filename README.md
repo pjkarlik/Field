@@ -7,6 +7,9 @@
   SimplexNoise document http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf
 
 ## Change Log
+  * demo render http://field_test.surge.sh
+  * variation http://field_parabola.surge.sh
+  * variation http://field_field.surge.sh
   * Added Animation - tweaking functions still...
   * Simplex Noise functions - much faster than Perlin
   * Initial Commit - Basic formula found online.

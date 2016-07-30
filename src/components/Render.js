@@ -7,8 +7,16 @@ export default class Render {
   constructor(element) {
     // Screen Set Up //
     this.element = element;
-    // render const //
+    // field vars //
     this.grid = 40;
+    this.radius = 200;
+    this.size = 2;
+    this.color = {
+      r: 0,
+      g: 255,
+      b: 0,
+    };
+    // render const //
     this.width = fastfloor(document.documentElement.clientWidth, window.innerWidth || 0);
     this.height = fastfloor(document.documentElement.clientHeight, window.innerHeight || 0);
     this.rows = fastfloor(this.width / this.grid);
@@ -45,13 +53,9 @@ export default class Render {
             x,
             y,
           },
-          size: 2,
-          radius: 150,
-          color: {
-            r: 0,
-            g: 255,
-            b: 0,
-          },
+          size: this.size,
+          radius: this.radius,
+          color: this.color,
           canvas: this.surface,
         });
         this.points.push(point);
