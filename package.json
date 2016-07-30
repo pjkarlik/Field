@@ -1,7 +1,7 @@
 {
-  "name": "canvas",
+  "name": "field",
   "version": "0.0.5",
-  "description": "canvas",
+  "description": "field",
   "main": "index.js",
   "scripts": {
     "webpack": "node node_modules/.bin/webpack --progress --colors",
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/pjkarlik/Canvas.git"
+    "url": "git://github.com/pjkarlik/Field.git"
   },
   "author": "pjkarlik@gmail.com",
   "license": "MIT",
