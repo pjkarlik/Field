@@ -1,10 +1,5 @@
-# Perlin Noise
-
-  Perlin Noise experiments - Some testes with two source JS files to make procedural examples with perlin noise.
-
-  This is a port of Ken Perlin's Java code. The
-  original Java code is at http://cs.nyu.edu/%7Eperlin/noise/.
-  SimplexNoise document http://staffwww.itn.liu.se/~stegu/simplexnoise/simplexnoise.pdf
+# Field Distortion Noise
+  playing around with distance / effect and proximity 
 
 ## Change Log
   * demo render http://field_test.surge.sh
