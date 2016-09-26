@@ -8,7 +8,7 @@ const fs = require('fs');
 fs.writeFileSync('version.json', JSON.stringify({ name, version, description }));
 
 const config = {
-  name: 'Isometric',
+  name: 'Field',
   target: 'web',
   devServer: {
     host: '0.0.0.0',
