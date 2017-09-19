@@ -6,7 +6,7 @@ import Point from './Point';
 export default class Render {
   constructor(element) {
     // Screen Set Up //
-    this.element = element;
+    this.element = element || document.body;
     // field vars //
     this.grid = 40;
     this.radius = 200;
@@ -14,7 +14,7 @@ export default class Render {
     this.color = {
       r: 0,
       g: 255,
-      b: 0,
+      b: 0
     };
     // render const //
     this.width = fastfloor(document.documentElement.clientWidth, window.innerWidth || 0);
@@ -51,12 +51,12 @@ export default class Render {
           y: (this.grid / 2) + y * this.grid,
           index: {
             x,
-            y,
+            y
           },
           size: this.size,
           radius: this.radius,
           color: this.color,
-          canvas: this.surface,
+          canvas: this.surface
         });
         this.points.push(point);
       }

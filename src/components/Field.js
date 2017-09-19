@@ -8,7 +8,7 @@ export default class Particle {
     this.y = this.vy = obj.y;
     this.index = {
       x: obj.index.x,
-      y: obj.index.y,
+      y: obj.index.y
     };
     this.size = this.originalSize = obj.size;
     this.radius = obj.radius;
@@ -32,7 +32,7 @@ export default class Particle {
     return {
       index: this.index,
       x: this.vx,
-      y: this.vy,
+      y: this.vy
     };
   }
 
@@ -40,7 +40,7 @@ export default class Particle {
     const points = this.mouse.pointer();
     const position = {
       y: points.y - this.y,
-      x: points.x - this.x,
+      x: points.x - this.x
     };
     return position;
   }

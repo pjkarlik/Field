@@ -1,3 +1,6 @@
+![travis ci build](https://travis-ci.org/pjkarlik/Field.svg?branch=master)
+![webpack2](https://img.shields.io/badge/webpack-2.0-brightgreen.svg) ![javascript](https://img.shields.io/badge/es6-bable-yellow.svg)
+
 # Field Distortion Noise
   playing around with distance / effect and proximity
 
@@ -12,8 +15,8 @@
   Requires Node v7.0.0 or greater
 
 ```bash
-$ npm install
-$ npm run dev & open http://localhost:8080
+$ yarn install
+$ yarn run dev & open http://localhost:2020
 ```
 
 ## License
