@@ -4,6 +4,8 @@
 # Field Distortion Noise
   playing around with distance / effect and proximity
 
+  index.js => /components/Render.js 
+
 ## Change Log
   * demo render http://field_test.surge.sh
   * variation http://field_parabola.surge.sh
